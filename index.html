@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+<main>
+    <section class="choclet swiper">
+        <img class="choclet__title" src="./img/our_products.png" alt="">
+        <div class="slider-wripper slider">
+          <div class="chocolet__cards slides">
+            <div class="chocolet__cards--box swiper-slide slide">
+                <img class="chocolet__cards--box--img" src="./img/orange.png" alt="">
+                <p class="chocolet__cards--box--title1">orange</p>
+                <p class="chocolet__cards--box--text1">Dark chocolate</p>
+                <button class="chocolet__cards--box--button" id="openModal">45 UAH</button>       
+            </div>
+            <div class="chocolet__cards--box swiper-slide slide">
+                <img class="chocolet__cards--box--img" src="./img/apple_chanberry.png" alt="">
+                <p class="chocolet__cards--box--title1">APPLE&CRANBERRY</p>
+                <p class="chocolet__cards--box--text1">Milk chocolate</p>
+                <button class="chocolet__cards--box--button" id="openModal">50 UAH</button>
+            </div>
+            <div class="chocolet__cards--box swiper-slide slide">
+                <img class="chocolet__cards--box--img" src="./img/lime_sea_salt.png" alt="">
+                <p class="chocolet__cards--box--title1">lime&sea salt</p>
+                <p class="chocolet__cards--box--text1">Dark chocolate</p>
+                <button class="chocolet__cards--box--button">66 UAH</button>
+            </div>
+            <div class="chocolet__cards--box swiper-slide slide">
+                <img class="chocolet__cards--box--img" src="./img/pinapple.png" alt="">
+                <p class="chocolet__cards--box--title1">pineapple</p>
+                <p class="chocolet__cards--box--text1">Dark chocolate</p>
+                <button class="chocolet__cards--box--button">54 UAH</button>
+            </div>
+            <div class="chocolet__cards--box swiper-slide slide">
+                <img class="chocolet__cards--box--img" src="./img/classic_milk.png" alt="">
+                <p class="chocolet__cards--box--title1">Classic</p>
+                <p class="chocolet__cards--box--text1">Milk chocolate</p>
+                <button class="chocolet__cards--box--button">45 UAH</button>
+            </div>
+            <div class="chocolet__cards--box swiper-slide slide">
+                <img class="chocolet__cards--box--img" src="./img/honey.png" alt="">
+                <p class="chocolet__cards--box--title1">honey</p>
+                <p class="chocolet__cards--box--text1">Milk chocolate</p>
+                <button class="chocolet__cards--box--button">50 UAH</button>
+            </div>
+            <div class="chocolet__cards--box swiper-slide slide">
+                <img class="chocolet__cards--box--img" src="./img/road_winter_fruits.png" alt="">
+                <p class="chocolet__cards--box--title1">Roasted fruits</p>
+                <p class="chocolet__cards--box--text1">Dark chocolate</p>
+                <button class="chocolet__cards--box--button">66 UAH</button>
+            </div>
+            <div class="chocolet__cards--box swiper-slide slide">
+                <img class="chocolet__cards--box--img" src="./img/classic_white.png" alt="">
+                <p class="chocolet__cards--box--title1">Classic</p>
+                <p class="chocolet__cards--box--text1">White chocolate</p>
+                <button class="chocolet__cards--box--button">54 UAH</button>
+            </div>
+          </div>
+          <div id="modal" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <form>
+              <img class="modal__Title" src="./img/bUY nOW.png" alt="">
+              <h2 class="modal__title">Personal information</h2>
+              <div class="modalr">
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input type="text" id="name" name="name">
+                </div>
+                <div class="form-group">
+                  <label for="surname">Surname</label>
+                  <input type="text" id="surname" name="surname">
+                </div>
+              </div>
+              <h2 class="modal__title">Email</h2>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email">
+                </div>
+                <h2 class="modal__title">Phone number</h2>
+                <div class="form-group">
+                  <label for="phone">Phone number</label>
+                  <div class="phone-input">
+                    <input type="tel" id="phone" name="phone">
+                  </div>
+                </div>
+                <h2 class="modal__title">Card number</h2>
+                <div class="form-group">
+                  <label for="card">Card number
+                    <svg class="form-group--svg" width="32" height="20" viewBox="0 0 32 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M16 16.8343C14.4022 18.2053 12.3295 19.033 10.0647 19.033C5.01106 19.033 0.914307 14.9122 0.914307 9.82898C0.914307 4.74576 5.01106 0.625 10.0647 0.625C12.3295 0.625 14.4022 1.45267 16 2.82371C17.5979 1.45267 19.6705 0.625 21.9354 0.625C26.989 0.625 31.0857 4.74576 31.0857 9.82898C31.0857 14.9122 26.989 19.033 21.9354 19.033C19.6705 19.033 17.5979 18.2053 16 16.8343Z" fill="#ED0006"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M16 16.8343C17.9674 15.1461 19.215 12.6341 19.215 9.82898C19.215 7.02389 17.9674 4.51189 16 2.82371C17.5978 1.45267 19.6705 0.625 21.9354 0.625C26.989 0.625 31.0857 4.74576 31.0857 9.82898C31.0857 14.9122 26.989 19.033 21.9354 19.033C19.6705 19.033 17.5978 18.2053 16 16.8343Z" fill="#F9A000"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M16.0001 16.8343C17.9675 15.1462 19.2151 12.6342 19.2151 9.82909C19.2151 7.02402 17.9675 4.51203 16.0001 2.82385C14.0327 4.51203 12.7852 7.02402 12.7852 9.82909C12.7852 12.6342 14.0327 15.1462 16.0001 16.8343Z" fill="#FF5E00"/>
+                      </svg>
+                  </label>                                            
+                  <input type="text" id="card" name="card">
+                </div>
+                <h2 class="modal__title">Comment</h2>
+                <div class="form-group">
+                  <label for="comment">Comment</label>
+                  <input type="text" id="comment" name="comment">
+                </div>
+                <button open-modal class="submit" type="submit">Submit</button>
+              </form>
+            </div>
+          </div>
+          <div id="modal02" class="modal modal2">
+            <div class="modal-content">
+              <span class="close modal-content--close">&times;</span>
+              <h2 class="modal2__content--title">thank you!</h2>
+              <p class="modal2__content--text">We are glad that you ordered our chocolate and we are giving you a 20% discount on all our products.</p>
+              <img class="modal2__content--img" src="./img/ezgif-1-2d3a67b880 1.png" alt="">
+            </div>
+          </div>
+          <div class="dots">
+            <span class="dot" onclick="moveSlide(0)"></span>
+            <span class="dot" onclick="moveSlide(1)"></span>
+            <span class="dot" onclick="moveSlide(2)"></span>
+            <span class="dot" onclick="moveSlide(3)"></span>
+            <span class="dot" onclick="moveSlide(4)"></span>
+          </div>
+        </div>
+        </div>
+    </section>
+</main>
+</body>
+<script src="./index.js"></script>
+</html>
